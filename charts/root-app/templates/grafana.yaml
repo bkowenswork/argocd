@@ -7,9 +7,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/grafana/helm-charts.git
+    repoURL: https://grafana.github.io/helm-charts
     chart: prometheus
-    targetRevision: main
+    targetRevision: HEAD
     helm:
       values: |
         ingress:
