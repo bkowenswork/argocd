@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/grafana/helm-charts.git
     chart: prometheus
-    targetRevision: HEAD
+    targetRevision: main
     helm:
       values: |
         ingress:
