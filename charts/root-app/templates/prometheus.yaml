@@ -12,8 +12,16 @@ spec:
     targetRevision: 25.3.1
     helm:
       values: |
+        server:
+          ingress:
+            hosts: prometheus.techfortress.com
+          service:
+            type: LoadBalancer  
+          ingress:
+            enabled: true  
         pushgateway:
           enabled: false
+
   destination:
     server: https://kubernetes.default.svc
     namespace: default
