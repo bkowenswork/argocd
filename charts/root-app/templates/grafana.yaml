@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://grafana.github.io/helm-charts
-    chart: prometheus
+    chart: grafana
     targetRevision: HEAD
     helm:
       values: |
