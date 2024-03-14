@@ -47,7 +47,6 @@ spec:
                 disableDeletion: false
                 options:
                   path: /var/lib/grafana/dashboards/kubernetes
-                
         dashboardsConfigMaps:
           kubernetes: kubernetes-dashboard
         defaultDashboardsEnabled: false
