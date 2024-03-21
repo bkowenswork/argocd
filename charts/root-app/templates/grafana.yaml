@@ -32,14 +32,12 @@ spec:
             kubernetes.io/ingress.class: nginx
           hosts:
             - panopticon.techfortress.com
-        grafana.ini:
-          server:
-            root_url: http://panopticon.techfortress.com
-        datasources:
+        datasources: 
           datasources.yaml:
             apiVersion: 1
             datasources:
-            - name: Prometheus
+            - name: Prometheus2
               type: prometheus
-              url: http://prometheus.techfortress.com
-              isDefault: true
+              url: http://prometheus-server.default.svc
+              access: proxy
+              isDefault: false
