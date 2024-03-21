@@ -23,8 +23,7 @@ spec:
     helm:
       releaseName: grafana
       values: |
-        adminUser: admin
-        adminPassword: adminadmin 
+        adminPassword: pussy 
         service:
           type: LoadBalancer
         ingress:
