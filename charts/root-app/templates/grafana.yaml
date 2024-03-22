@@ -32,12 +32,19 @@ spec:
             kubernetes.io/ingress.class: nginx
           hosts:
             - panopticon.techfortress.com
-        datasources: 
-          datasources.yaml:
-            apiVersion: 1
-            datasources:
-            - name: PrometheusMain
-              type: prometheus
-              url: http://prometheus.techfortress.com
-              access: proxy
-              isDefault: false
+        dashboards:
+          default:
+            exporter:
+              gnetId: 13978
+              revision: 1
+              datasource: Prometheus
+
+# datasources: 
+#   datasources.yaml:
+#     apiVersion: 1
+#     datasources:
+#     - name: PrometheusMain
+#       type: prometheus
+#       url: http://prometheus.techfortress.com
+#       access: proxy
+#       isDefault: false
