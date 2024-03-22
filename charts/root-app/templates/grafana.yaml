@@ -32,6 +32,18 @@ spec:
             kubernetes.io/ingress.class: nginx
           hosts:
             - panopticon.techfortress.com
+        dashboardProviders:
+          dashboardproviders.yaml:
+            apiVersion: 1
+            providers:
+              - name: "default"
+                orgId: 1
+                folder: "Generated"
+                type: file
+                disableDeletion: false
+                editable: true
+                options:
+                  path: /var/lib/grafana/dashboards/default            
         dashboards:
           default:
             exporter:
