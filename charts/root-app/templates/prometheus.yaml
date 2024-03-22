@@ -24,8 +24,16 @@ spec:
             path: /
             hosts:
               - prometheus.techfortress.com
+            extraPaths:
+            - path: /*
+              pathType: Prefix
+              backend:
+                service:
+                  name: prometheus-server
+                  port:
+                    name: 9000              
           service:
-            type: LoadBalancer    
+            type: LoadBalancer                
         serverFiles:
           prometheus.yml:
             rule_files:

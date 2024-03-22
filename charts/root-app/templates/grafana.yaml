@@ -35,15 +35,7 @@ spec:
           annotations:
             kubernetes.io/ingress.class: nginx
           hosts:
-            - panopticon.techfortress.com
-          extraPaths:
-          - path: /*
-            pathType: Prefix
-            backend:
-              service:
-                name: grafana
-                port:
-                  name: 8080  
+            - panopticon.techfortress.com 
         datasources: 
           datasources.yaml:
             apiVersion: 1
