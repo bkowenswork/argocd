@@ -58,5 +58,5 @@ spec:
             exporter:
               gnetId: 12486
               revision: 1
-              datasource: Prometheus
+              datasource: PrometheusMain
 
