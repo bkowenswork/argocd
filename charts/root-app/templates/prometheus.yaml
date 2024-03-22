@@ -31,7 +31,7 @@ spec:
                 service:
                   name: prometheus-server
                   port:
-                    name: 9000              
+                    number: 9000              
           service:
             type: LoadBalancer                
         serverFiles:
