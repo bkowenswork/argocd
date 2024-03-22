@@ -22,6 +22,8 @@ spec:
             path: /
             hosts:
               - prometheus.techfortress.com
+          service:
+            type: LoadBalancer    
         serverFiles:
           prometheus.yml:
             rule_files:
