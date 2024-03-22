@@ -16,6 +16,8 @@ spec:
     path: charts/prometheus
     helm:
       values: |
+        alertmanager:
+          enabled: true
         server:
           ingress:
             enabled: true
