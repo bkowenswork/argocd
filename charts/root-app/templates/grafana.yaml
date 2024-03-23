@@ -42,7 +42,7 @@ spec:
             datasources:
             - name: PrometheusMain
               type: prometheus
-              url: http://192.168.0.65:30264
+              url: http://prometheus.techfortress.com:31087
               access: proxy
               isDefault: false            
         dashboardProviders:
