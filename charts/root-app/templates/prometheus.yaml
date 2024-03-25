@@ -27,7 +27,7 @@ spec:
               - path: /
                 pathType: ImplementationSpecific                      
           service:
-            type: NodePort
+            type: LoadBalancer
             port: 9000                
         serverFiles:
           prometheus.yml:
