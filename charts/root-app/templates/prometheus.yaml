@@ -21,14 +21,12 @@ spec:
         server:
           ingress:
             enabled: true
+            annotations:
+              kubernetes.io/ingress.class: nginx
             hosts:
               - prometheus.techfortress.com   
-            paths:
-              - path: /
-                pathType: ImplementationSpecific                      
           service:
             type: LoadBalancer
-            port: 9000                
         serverFiles:
           prometheus.yml:
             rule_files:
