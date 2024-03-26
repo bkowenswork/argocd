@@ -18,6 +18,8 @@ spec:
       values: |
         alertmanager:
           enabled: true
+        kube-state-metrics:
+          enabled: true  
         server:
           ingress:
             enabled: true
@@ -39,7 +41,13 @@ spec:
                     - 192.168.0.29:9100
                     - 192.168.0.3:9100
                     - 192.168.0.21:9100   
-                    - 192.168.0.44:9100    
+                    - 192.168.0.44:9100  
+              - job_name: kube-state-metrics
+                metrics_path: /metrics
+                scheme: http
+                static_configs:
+                - targets:                    
+                  - 10.100.157.180:8080
   syncPolicy:
     automated:
       prune: true
