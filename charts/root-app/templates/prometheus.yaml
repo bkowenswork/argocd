@@ -20,9 +20,6 @@ spec:
           enabled: true
         kube-state-metrics:
           enabled: true  
-          service:
-            port:9180
-            type: LoadBalancer
         server:
           ingress:
             enabled: true
