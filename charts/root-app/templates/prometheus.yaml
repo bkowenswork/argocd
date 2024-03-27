@@ -20,6 +20,9 @@ spec:
           enabled: true
         kube-state-metrics:
           enabled: true  
+          service:
+            port:9180
+            type: LoadBalancer
         server:
           ingress:
             enabled: true
@@ -47,7 +50,7 @@ spec:
                 scheme: http
                 static_configs:
                 - targets:                    
-                  - 10.100.157.180:8080
+                  - 192.168.0.65:9180
   syncPolicy:
     automated:
       prune: true
