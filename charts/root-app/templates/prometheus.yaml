@@ -42,6 +42,7 @@ spec:
                     - 192.168.0.3:9100
                     - 192.168.0.21:9100   
                     - 192.168.0.44:9100  
+                    - 192.168.0.44:9835
               - job_name: kube-state-metrics
                 metrics_path: /metrics
                 scheme: http
@@ -53,4 +54,4 @@ spec:
       prune: true
     syncOptions:
     - Validate=true
-    - CreateNamespace=true
+    - CreateNamespace=truehttps://www.vice.com/en/article/ozzy-osbourne-hates-christmas-drank-28-gallons-booze/
